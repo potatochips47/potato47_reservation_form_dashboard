@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>PotatoChips2023</h2>
+    <h2>新歓イベント用予約フォーム一覧</h2>
+    <ul class="card-wrapper">
+      <li class="card">
+        <img src="potatologo.png" alt="" />
+        <h3>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfTdYoDixCZSzOtJX9HmlNwd0dQ4AiJXlFULEgHfRtW4L_vuQ/viewform?usp=sf_link"
+            >4/3 zoomサークル説明会 19:00~21:00</a
+          >
+        </h3>
+        <p>
+          Zoomでやるよ！サークル迷ってる人や、ポテトがどんなサークルなのか気になる人はぜひ！🍟
+        </p>
+      </li>
+      <li class="card">
+        <img src="potatologo.png" alt="" />
+        <h3>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScUfw214VJQ95PbAsUxoo5ELNcl7VwPGZtNDfb6bjHjDisnBg/viewform?usp=sf_link"
+            >4/5 対面履修相談会 14:00~16:00</a
+          >
+        </h3>
+        <p>
+          履修って意外とややこしい⁉️先輩からアドバイスをもらいながら一緒に履修を組もう📝<br />
+          昼は学校で、夜はzoomでやるよ！
+        </p>
+      </li>
+      <li class="card">
+        <img src="potatologo.png" alt="" />
+        <h3>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfdT4lTbJdqq5XzLS18znBCyQ99yXI254o3zGE7FqVYhI6LEg/viewform?usp=sf_link"
+            >4/5 zoom履修相談会 19:00~21:00</a
+          >
+        </h3>
+        <p>
+          履修って意外とややこしい⁉️先輩からアドバイスをもらいながら一緒に履修を組もう📝<br />
+          昼は学校で、夜はzoomでやるよ！
+        </p>
+      </li>
+    </ul>
+    <p>&nbsp;</p>
+    <ul class="card-wrapper">
+      <li class="card">
+        <img src="bowling.png" alt="" />
+        <h3>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfENPZDBmUNFbH_gbOb25fUjOOjb-_uXMcEy6l3sCQ-E8_33Q/viewform?usp=sf_link"
+            >4/7 ボーリング企画</a
+          >
+        </h3>
+        <p>
+          班に分かれてチーム戦をするよ！🎳上手さ下手さは二の次で、とにかく盛り上がる！ほのそして…優勝チームには豪華景品が…⁉️
+        </p>
+      </li>
+      <li class="card">
+        <img src="enoshima.png" alt="" />
+        <h3>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScAXUpzfiAmGNqvEZyGR3u75ysGgDTczO0xy2vfwqGkx6iOqQ/viewform?usp=sf_link"
+            >4/9 江ノ島満喫</a
+          >
+        </h3>
+        <p>
+          ポテト最初のビッグイベント❕ 班ごとに食べ歩きしたり江ノ島観光🚃<br />
+          先輩とも仲良くなれて、友だち作りもできちゃう！！
+        </p>
+      </li>
+      <li class="card">
+        <img src="minatomirai.png" alt="" />
+        <h3>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc_5mr83dL9ERADtowBoxBO6Hd1bY9WfWZVZwIoMIvue7wV3w/viewform?usp=sf_link"
+            >4/13 みなとみらい企画</a
+          >
+        </h3>
+        <p>
+          横浜と言えばみなとみらい🌃✨<br />
+          きれいな夜景を楽しめて映えるスポットもたくさんあるよ！！
+        </p>
+      </li>
+    </ul>
+
+    <style>
+      .card {
+        --card-gradient: rgba(0, 0, 0, 0.8);
+        --card-blend-mode: overlay;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+        padding-bottom: 1rem;
+        background-image: linear-gradient(
+          var(--card-gradient),
+          white max(9.5rem, 29vh)
+        );
+        overflow: hidden;
+      }
+      .card img {
+        border-radius: 0.5rem 0.5rem 0 0;
+        width: 100%;
+        object-fit: cover;
+        max-height: max(10rem, 30vh);
+        aspect-ratio: 4/3;
+        mix-blend-mode: var(--card-blend-mode);
+      }
+      .card img ~ * {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      .card > :last-child {
+        margin-bottom: 0;
+      }
+      .card:hover,
+      .card:focus-within {
+        --card-gradient: #24a9d5 max(8.5rem, 30vh);
+      }
+
+      /* Additional demo display styles */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        place-content: center;
+        justify-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 1rem;
+        line-height: 1.5;
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+          helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial,
+          sans-serif;
+        color: #444;
+        background-color: #ddeeff;
+      }
+
+      .card h3 {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .card a {
+        color: inherit;
+      }
+
+      .card-wrapper {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+        grid-gap: 1.5rem;
+        max-width: 100vw;
+        width: 120ch;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    </style>
+  </body>
+</html>
